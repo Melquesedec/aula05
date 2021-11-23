@@ -1,35 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/estilo.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 05</title>
+    <title>exercicio</title>
 </head>
 <body>
-
-    <h2>Exercício 04</h2>
-    <div><strong id="seunome">Seu nome</strong></div>
-    <input type="text" name="nome" id="nome">
-    <input type="submit" id="enviarN" onclick="enviarN()">
-<script>
-    function enviarN(){
-        let nome = document.getElementById('nome');
-        let enviarN = document.getElementById('enviarN'); 
-        let info = Number(nome.value);
-        alert(` Bem vindo! ${info}.`)               
-    }
-</script>
-
-     <h1>Sistema de Multas</h1>
-     <p id="carro">Velocidade do veiculo</p>
-     <input type="number" name="velocidade" id="velocidade">
-     <strong id="quilometros">KM/h</strong>
-     <input type="submit" value="verificar" id="verificar" onclick="calcular()">
-     <div id="vResultado"></div>
-     <script>
-         function calcular(){
+    <h1>Sistema de Multas</h1>
+    <p id="carro">Velocidade do veiculo</p>
+    <input type="number" name="velocidade" id="velocidade">
+    <strong id="quilometros">KM/h</strong>
+    <input type="submit" value="verificar" id="verificar" onclick="calcular()">
+        <div id="info"></div>
+        <script>
+            function calcular(){
              // define a variável velocidade pegando o ID do input velocidade
             let velocidade = document.getElementById('velocidade');
             let vResultado = document.getElementById('vResultado');
@@ -45,6 +31,6 @@
                     vResultado.innerHTML += ` Parabéns, você não foi multado.`; 
                 }  
             }
-            </script>
+        </script>
 </body>
 </html>
